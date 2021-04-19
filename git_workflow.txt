@@ -1,0 +1,6 @@
+1. clone the `python_classes_objects` locally.
+2. checkout a new branch
+3. make your changes
+4. commit your changes
+5. push your branch to the repo
+6. open pull request against the main branch
