@@ -1,33 +1,33 @@
 class Car:
-    def __init__(self, make, color, year, name, transmission, isOn=True):
-        self.make = make
-        self.color = color
-        self.year = year
-        self.name = name
-        self.transmission = transmission
-        self.isOn = isOn
+  def __init__(self, make, color, year, name, transmission, isOn=True):
+    self.make = make
+    self.color = color
+    self.year = year
+    self.name = name
+    self.transmission = transmission
+    self.isOn = isOn
 
-    def car_make(self):
-        print("This " + self.name + " make is " + self.make)
+  def car_make(self):
+    print("This " + self.name + " make is " + self.make)
 
-    def checkStatus(self):
-        return self.isOn
+  def checkStatus(self):
+    return self.isOn
 
-    def turnOn(self):
-        status = self.checkStatus()
-        print(status)
-        if status == False:
-            self.isOn = True
-            print("Just turn car on, zoom off!!!")
-        else:
-            print("The car is on and ready")
+  def turnOn(self):
+    status = self.checkStatus()
+    print(status)
+    if status == False:
+      self.isOn = True
+      print("Just turn car on, zoom off!!!")
+    else:
+      print("The car is on and ready")
 
-    def turnOff(self):
-        status = self.checkStatus()
-        if status:
-            self.isOn = False
-        else:
-            print("The car is already off")
+  def turnOff(self):
+    status = self.checkStatus()
+    if status:
+      self.isOn = False
+    else:
+      print("The car is already off")
 
 
 car_A = Car("Mercedez Benz", "Black", 2021, "car_A", "Auto")
